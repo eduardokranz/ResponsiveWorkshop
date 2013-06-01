@@ -1,0 +1,386 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Responsive Web Design Workshop : Design</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Responsive Web Design</h1>
+					<p>&nbsp;</p>
+					<h3>Design Process</h3>
+					<p>&nbsp;</p>
+					<p>Eduardo Kranz <br/> @eduardokranz / ga@eduardokranz.com</p>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Hi There!</h2>
+						<h1>&nbsp;</h1>
+						<h3 class="fragment">Quick intro</h3>
+					</section>
+					<section>
+						<h2>My Background</h2>
+						<ul>
+							<li class="fragment">UI/UX Designer and Front End Developer</li>
+							<li class="fragment">+6 years of experience</li>
+							<li class="fragment">I love to answer questions</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Overview for the day</h2>
+						<ul>
+							<li class="fragment">Define Responsive Web Design and a brief history of Web Design</li>
+							<li class="fragment">Challenges in Responsive Web Design</li>
+							<li class="fragment">Benefits</li>
+							<li class="fragment">Lunch Break</li>
+							<li class="fragment">Exercise</li>
+							<li class="fragment">Tools</li>
+							<li class="fragment">My suggested design process</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Takeaways</h2>
+						<ul>
+							<li class="fragment">What Responsive Web Design brought to the table and why it matters</li>
+							<li class="fragment">Tools and concepts that will help you plan and execute your next responsive project</li>
+							<li class="fragment">Get developers to understand what you want and deliver what you need.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is Responsive Web Design</h2>
+						<h2>&nbsp;</h2>
+							<h3 class="fragment">It is an approach that aims to create websites that present its content adequately in a variety of devices, ranging from mobile devices to desktop computers.</h3> 
+					</section>
+
+					<section>
+						<h2>But how did we get to Responsive Web Design?</h2>
+						<h2>&nbsp;</h2>
+						<h3>Back in the day we used fluid layouts</h3>
+						<ul>
+							<li class="fragment">Comes from table layouts</li>
+							<li class="fragment">Really old fashion solution for a layout</li>
+							<li class="fragment">Layout can break quite easily and limited control over the content</li>
+							<li class="fragment">Flexible structure</li>
+							<li class="fragment"><a href="http://www.finance.gov.au/">Department of Finance</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Fixed Layouts</h3>
+						<ul>
+							<li class="fragment">Web 2.0 made it really popular</li>
+							<li class="fragment">Lots of control over the content</li>
+							<li class="fragment">Fixed structure</li>
+							<li class="fragment"><a href="http://www.nsw.gov.au/">NSW Government</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Adaptive Design</h2>
+						<ul>
+							<li class="fragment">Iphones and Ipads started to become really popular</li>
+							<li class="fragment">The website has defined screen sizes that it should adapt to</li>
+							<li class="fragment">Flexible structure</li>
+							<li class="fragment">Changes parts of the design to adapt to the device visiting the website</li>
+							<li class="fragment"><a href="http://www.catswhocode.com/blog/">Cats Who Code Blog</a></li>
+							
+						</ul>
+					</section>
+
+					<section>
+						<h2>Responsive Design</h2>
+						<ul>
+							<li class="fragment">We can't define what devices will be visiting our websites</li>
+							<li class="fragment">Mobiles, Tablets, Laptops, Desktops, Fridges, Cars, TV, Game Consoles</li>
+							<li class="fragment">Flexible Structure</li>
+							<li class="fragment">The website organically responds to a certains screen size or a change in size.</li>
+							<li class="fragment"><a href="http://trentwalton.com/">Trent Walton</a></li>
+							<li class="fragment"><a href="http://foodsense.is/">Food Sense</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Challenges in Responsive Web Design</h2>
+						<h2>&nbsp;</h2>
+						<h3>1. Handling Images</h3>
+						<ul>
+							<li class="fragment">Small screens, big screens, Retina and HiDPI screens.</li>
+							<li class="fragment">Delivering big images to mobiles over 4G/3G</li>
+							<li class="fragment">Scaling images in the screen</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>1. Handling Images</h3>
+						<img src="img/pictureelement.jpg" class="fragment" >
+					</section>
+
+					<section>
+						<h3>2. Device Limitations</h3>
+						<ul>
+							<li class="fragment">Battery Life</li>
+							<li class="fragment">Connectivity and Download Speeds</li>
+							<li class="fragment">No Hover, no pointer, etc.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>3. Preparing Content</h3>
+						<ul>
+							<li class="fragment">Designing content that can be viewed in different devices &amp; screens</li>
+							<li class="fragment">Gather the content at an early stage of the project</li>
+						</ul>
+					</section>
+					<section>
+						<h3>4. Other Challenges</h3>
+						<ul>
+							<li class="fragment">It is much harder to design and develop for a Response website</li>
+							<li class="fragment">Create a "visual content delivery system"</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>It is hard but it has it's benefits</h2>
+						<p>What is good about Responsive Web Design</p>
+						<ul>
+							<li class="fragment">Single code base. Update in one place, reach all devices</li>
+							<li class="fragment">It is ready for future devices (to an extend)</li>
+							<li class="fragment">More accessible</li>
+							<li class="fragment">WOW factor of being able to resize your browser</li>
+							<li class="fragment"><a href="https://medium.com/design-story/375bf9674cac">Medium</a></li>
+						</ul>
+					</section>
+				
+				</section>
+				<section>
+					<h1>Lunch Break</h1>
+				</section>
+				<section>
+						<h2>Exercise</h2>
+						<ul>
+							<li>Plan a website that should be available on Mobile devices, Tablets, Laptops and Desktops.</li>
+							<li class="fragment">You have all the content for it</li>
+							<li class="fragment">It could be a blog, portfolio, brochure website or other topic of your interest</li>
+							<li class="fragment">You have got 20 min to list the steps that you would take to design it</li>
+							<li class="fragment">You can also sketch what it would look like on the templates that you have on your table.</li>
+						</ul>
+					</section>
+				<section>
+					<section>
+						<h2>What did you come up with?</h2>
+						<p class="fragment">If your steps look like something like this:</p>
+						<ol>
+							<li class="fragment">Sketch ideas</li>
+							<li class="fragment">Create design concepts</li>
+							<li class="fragment">Create final mockup</li>
+							<li class="fragment">Update final mockup after revision <span class="fragment">20 times</span></li>
+							<li class="fragment">Give mockups to the developement team</li>
+							<li class="fragment">Pray they will deliver what you had in mind</li>
+							<li class="fragment">Listen to the client saying that it isn't what he expected</li>
+							<li class="fragment">Cry!</li>
+						</ol>
+						<h3 class="fragment">You are doing it the painful way.</h3>
+					</section>
+
+					<section>
+						<h2>These are some tools that you can use for your advantage</h2>
+							<ul>
+								<li class="fragment">Sketching</li>
+								<li class="fragment">Wireframes</li>
+								<li class="fragment">Style Tiles</li>
+								<li class="fragment">Prototypes and Mockups</li>
+								<li class="fragment">Pattern Libraries</li>
+							</ul>
+					</section>
+					<section>
+						<h2>Sketching</h2>
+						<ul>
+								<li class="fragment">Great for fast ideation and iteration</li>
+								<li class="fragment">Low fidelity</li>
+								<li class="fragment">Low cost</li>
+								<li class="fragment">You can use templates to help out</li>
+								<li class="fragment"><a href="http://dribbble.com/shots/218125-Landing-page-wireframe?list=searches">Sketch Example 1</a></li>
+								<li class="fragment"><a href="http://dribbble.com/shots/473785-Responsive-UI-wireframe-sketch?list=searches">Sketch Example 2</a></li>
+							</ul>
+					</section>
+				
+					<section>
+						<h2>Wireframes</h2>
+						<ul>
+								<li class="fragment">More structured, possibility of using real content (text)</li>
+								<li class="fragment">Low to Mid fidelity</li>
+								<li class="fragment">Lowish cost</li>
+								<li class="fragment">You can create them in 2 ways:</li>
+								<li class="fragment">Code: Simplified version of the final website, with no styles and mainly using black, white and boxes </li>
+								<li class="fragment">Image: Created using Balsamiq, OmniGraffle or other image editor</li>
+								<li class="fragment"><a href="http://dribbble.com/shots/1059017-Bikesoup-Ui-02?list=searches">Wireframe Example</a></li>
+							</ul>
+					</section>
+					<section>
+						<h2>Style Tiles</h2>
+						<ul>
+								<li class="fragment">Style Tiles are a design deliverable consisting of fonts, colors and interface elements that communicate the essence of a visual brand for the web.</li>
+								<li class="fragment">Mid to High fidelity</li>
+								<li class="fragment">Mid cost</li>
+								<li class="fragment">You have a template</li>
+								<li class="fragment">Main goal is to showcase the look and feel that you have in mind, not the final design</li>
+								<li class="fragment">Great to do iterations as changes are focus on style not on a final design mockup.</li>
+								<li class="fragment"><a href="http://styletil.es/">Style Tiles</a></li>
+							</ul>
+					</section>
+					<section>
+						<h2>Prototypes and Mockups</h2>
+						<ul>
+								<li class="fragment">High cost</li>
+								<li class="fragment">High fidelity</li>
+								<li class="fragment">High cost to make changes to mockups</li>
+								<li class="fragment">Lower cost to make changes to a prototype</li>
+								<li class="fragment">Mockups are static and precise</li>
+								<li class="fragment">Prototypes are dynamic and can also be precise.</li>
+								<li class="fragment">You can reuse the code from your prototype or use it as a stepping stone to try things before building the final website.</li>
+								<li class="fragment"><a href="https://rvdemo.healthhost.net/CLMM/ReferenceViewer/">Reference Viewer</a></li>
+							</ul>
+					</section>
+					<section>
+						<h2>Pattern Library</h2>
+						<ul>
+								<li class="fragment">It is a library of visual assets that will be used in the building process of the website. Preferably in HTML/CSS/JS, so developers can just copy and paste into their template.</li>
+								<li class="fragment">High fidelity</li>
+								<li class="fragment">Mid cost</li>
+								<li class="fragment">Creates consistency in the implementation and the library becomes a reference for anyone involved in the project</li>
+								<li class="fragment">Good codeing knowledge is needed</li>
+								<li class="fragment">It is like creating a small Twitter bootstrap for elements of your website</li>
+								<li class="fragment"><a href="http://purecss.io/">Pure CSS</a></li>
+							</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>My Process</h2>
+						<p>I do not have a defined process yet, as everyone one else in the industry I'm still experiementing with different tools.</p>
+						<ul>
+							<li class="fragment">Content Planning</li>
+							<li class="fragment">Sketch my ideas</li>
+							<li class="fragment">Wireframe (previously on Photoshop, but now I'm aiming to start coding it)</li>
+							<li class="fragment">Style Tiles</li>
+							<li class="fragment">Prototype or Pattern Library</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Why I chose those steps?</h2>
+						<ul>
+							<li class="fragment">Sketches: Quick to get ideas out of my head and onto paper</li>
+							<li class="fragment">Coded Wireframes: Allow stakeholders to visualize the content in different devices</li>
+							<li class="fragment">Style Tiles: Gives you a look and feel for the project, but allows the final design to come out at the end of the process</li>
+							<li class="fragment">Prototype: Great to communicate behaviour and style</li>
+							<li class="fragment">Pattern Library: Reusable code, defines the design for the project. This asset is more useful than a mockup as it can be easily updated and used to push changes to a series of website pages at once.</li>
+						</ul>
+					</section>
+
+				</section>
+				<section>
+						<h1>Thanks</h1>
+						<p>&nbsp;</p>
+						<p>Eduardo Kranz <br/> @eduardokranz / ga@eduardokranz.com</p>
+						<p>&nbsp;</p>
+						<h2>Tomorrow we will look at the development side of RWD</h2>
+				</section>
+				<section>
+						<h1>Resources</h1>
+						<ul>
+							<li><a href="http://alistapart.com/article/responsive-web-design">Responsive Web Design</a></li>
+							<li><a href="http://bradfrost.github.io/this-is-responsive/">This Is Responsive.</a></li>
+							<li><a href="http://daverupert.com/2013/04/responsive-deliverables/">Dave Ruppert : Responsive Deliverables</a></li>
+						</ul>
+				</section>
+			</div> <!-- End of SLIDES -->
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				rollingLinks: true,
+
+				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>
